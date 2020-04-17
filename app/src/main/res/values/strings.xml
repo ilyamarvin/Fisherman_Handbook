@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Fisherman Handbook</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_name">Справочник рыболова</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="menu_fish">Рыба</string>
+    <string name="menu_bait">Наживка</string>
+    <string name="menu_lure">Прикормка</string>
+    <string name="menu_tackle">Снасти</string>
+    <string name="menu_tips">Полезные советы</string>
+
+    <string name="home_second">Home Second</string>
+</resources>
