@@ -14,7 +14,7 @@
             android:title="@string/menu_bait" />
         <item
             android:id="@+id/nav_lure"
-            android:icon="@drawable/lure"
+            android:icon="@drawable/fish_food"
             android:title="@string/menu_lure" />
         <item
             android:id="@+id/nav_tackle"
