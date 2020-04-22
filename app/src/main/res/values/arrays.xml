@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="starter_array">здесь будет мини-гайд</string-array>
+
+    <string-array name="fish_array">
+        <item>Уклейка</item>
+        <item>Плотва</item>
+        <item>Елец</item>
+        <item>Краснопёрка</item>
+        <item>Карась</item>
+        <item>Карп</item>
+        <item>Щука</item>
+        <item>Лещ</item>
+        <item>Сом</item>
+        <item>Ротан</item>
+        <item>Окунь</item>
+        <item>Голавль</item>
+        <item>Жерех</item>
+        <item>Язь</item>
+        <item>Сазан</item>
+        <item>Густера</item>
+        <item>Амур</item>
+    </string-array>
+
+    <string-array name="hooks_array">
+        <item>Классические</item>
+        <item>Карповые</item>
+        <item>Офсетные</item>
+        <item>Тройники</item>
+        <item>Джиг-головки</item>
+        <item>Огруженные</item>
+        <item>Живцовые</item>
+    </string-array>
+
+    <string-array name="artbait_array">
+        <item>Блесны-вращалки</item>
+        <item>Блесны-колебалки</item>
+        <item>Воблеры</item>
+        <item>Топвотеры</item>
+        <item>Джеркбейты</item>
+        <item>Мягкие приманки</item>
+        <item>Вэки-черви</item>
+    </string-array>
+
+    <string-array name="bait_array">
+        <item>Черви</item>
+        <item>Личинки</item>
+        <item>Натуральные</item>
+        <item>Насекомые</item>
+        <item>Живые</item>
+        <item>Живцы</item>
+        <item>Орехи</item>
+        <item>Тонущие бойлы</item>
+        <item>Pop-up бойлы</item>
+        <item>Пеллетс</item>
+        <item>Искусственная кукуруза</item>
+        <item>Дипы</item>
+    </string-array>
+
+    <string-array name="rig_array">
+        <item>Поплавки</item>
+        <item>Сбирулино</item>
+        <item>Грузила</item>
+        <item>Поводки</item>
+        <item>Кормушки</item>
+        <item>Сигнализаторы поклёвки</item>
+        <item>Джиггинг</item>
+    </string-array>
+
+    <string-array name="lure_array">
+
+    </string-array>
+
+    <string-array name="tips_array">
+
+    </string-array>
+
+    <string-array name="weather_array">
+
+    </string-array>
+
+
+</resources>
