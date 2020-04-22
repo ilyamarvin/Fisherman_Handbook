@@ -6,11 +6,24 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Настройки</string>
 
+    <string name="menu_starter">Для начинающих</string>
     <string name="menu_fish">Рыба</string>
+    <string name="menu_hooks">Крючки</string>
+    <string name="menu_artbait">Приманки</string>
     <string name="menu_bait">Наживка</string>
+    <string name="menu_rig">Оснастка</string>
     <string name="menu_lure">Прикормка</string>
-    <string name="menu_tackle">Снасти</string>
     <string name="menu_tips">Полезные советы</string>
+    <string name="menu_weather">Погодные условия</string>
+
+    <string name="fish_1">Уклейка обыкновенная — проворная небольшая рыбка, водится повсеместно в реках и озерах средней полосы. Вероятнее всего, свое название она получила из-за легко осыпающейся чешуи, которая буквально прилипает к рукам, «оклеивает», стоит только ее взять.
+
+В разных регионах России и странах бывшего Союза можно встретить похожие названия рыбы – уклея, селява, баклейка, силявка, верховодка, верхоплавка, шаклея и прочие.
+
+    Уклейка, описание рыбы
+Уклейка имеет характерную для рыб обитающих в толще воды пелагическую (верх — светлый, низ — темный) окраску. Спинка рыбешки серая с зеленым отливом, вытянутое брюшко и сжатые бока светлые.
+
+    </string>
 
     <string name="home_second">Home Second</string>
 </resources>

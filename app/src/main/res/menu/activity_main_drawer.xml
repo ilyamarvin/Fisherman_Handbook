@@ -5,24 +5,40 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_starter"
+            android:icon="@drawable/starter"
+            android:title="@string/menu_starter" />
+        <item
             android:id="@+id/nav_fish"
             android:icon="@drawable/fish"
             android:title="@string/menu_fish" />
+        <item
+            android:id="@+id/nav_hooks"
+            android:icon="@drawable/hook"
+            android:title="@string/menu_hooks" />
+        <item
+            android:id="@+id/nav_artbait"
+            android:icon="@drawable/artbait"
+            android:title="@string/menu_artbait" />
         <item
             android:id="@+id/nav_bait"
             android:icon="@drawable/bait"
             android:title="@string/menu_bait" />
         <item
-            android:id="@+id/nav_lure"
-            android:icon="@drawable/fish_food"
-            android:title="@string/menu_lure" />
+            android:id="@+id/nav_rig"
+            android:icon="@drawable/rig"
+            android:title="@string/menu_rig" />
         <item
-            android:id="@+id/nav_tackle"
-            android:icon="@drawable/tackle"
-            android:title="@string/menu_tackle" />
+            android:id="@+id/nav_lure"
+            android:icon="@drawable/lure"
+            android:title="@string/menu_lure" />
         <item
             android:id="@+id/nav_tips"
             android:icon="@drawable/tips"
             android:title="@string/menu_tips" />
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/weather"
+            android:title="@string/menu_weather" />
     </group>
 </menu>
