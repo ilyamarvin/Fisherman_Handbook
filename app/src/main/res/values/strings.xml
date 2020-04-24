@@ -16,14 +16,71 @@
     <string name="menu_tips">Полезные советы</string>
     <string name="menu_weather">Погодные условия</string>
 
+
+    <string name="starter">Информация для начинающих</string>
+
+
     <string name="fish_1">Уклейка обыкновенная — проворная небольшая рыбка, водится повсеместно в реках и озерах средней полосы. Вероятнее всего, свое название она получила из-за легко осыпающейся чешуи, которая буквально прилипает к рукам, «оклеивает», стоит только ее взять.
+В разных регионах России и странах бывшего Союза можно встретить похожие названия рыбы – уклея, селява, баклейка, силявка, верховодка, верхоплавка, шаклея и прочие. Уклейка, описание рыбы
+Уклейка имеет характерную для рыб обитающих в толще воды пелагическую (верх — светлый, низ — темный) окраску. Спинка рыбешки серая с зеленым отливом, вытянутое брюшко и сжатые бока светлые.</string>
+    <string name="fish_2">Информация про плотву</string>
+    <string name="fish_3">Информация про елец</string>
+    <string name="fish_4">Информация про краснопёрку</string>
+    <string name="fish_5">Информация про карася</string>
+    <string name="fish_6">Информация про карпа</string>
+    <string name="fish_7">Информация про щуку</string>
+    <string name="fish_8">Информация про леща</string>
+    <string name="fish_9">Информация про сома</string>
+    <string name="fish_10">Информация про ротана</string>
+    <string name="fish_11">Информация про окуня</string>
+    <string name="fish_12">Информация про голавля</string>
+    <string name="fish_13">Информация про жереха</string>
+    <string name="fish_14">Информация про язя</string>
+    <string name="fish_15">Информация про сазана</string>
+    <string name="fish_16">Информация про густеру</string>
+    <string name="fish_17">Информация про амура</string>
 
-В разных регионах России и странах бывшего Союза можно встретить похожие названия рыбы – уклея, селява, баклейка, силявка, верховодка, верхоплавка, шаклея и прочие.
 
-    Уклейка, описание рыбы
-Уклейка имеет характерную для рыб обитающих в толще воды пелагическую (верх — светлый, низ — темный) окраску. Спинка рыбешки серая с зеленым отливом, вытянутое брюшко и сжатые бока светлые.
+    <string name="hook_1">Информация про 1 крючок</string>
+    <string name="hook_2">Информация про 2 крючок</string>
+    <string name="hook_3">Информация про 3 крючок</string>
+    <string name="hook_4">Информация про 4 крючок</string>
+    <string name="hook_5">Информация про 5 крючок</string>
+    <string name="hook_6">Информация про 6 крючок</string>
+    <string name="hook_7">Информация про 7 крючок</string>
 
-    </string>
+
+    <string name="artbait_1">Информация про блесны-вращалки</string>
+    <string name="artbait_2">Информация про блесны-колебалки</string>
+    <string name="artbait_3">Информация про воблеры</string>
+    <string name="artbait_4">Информация про топвотеры</string>
+    <string name="artbait_5">Информация про джеркбейты</string>
+    <string name="artbait_6">Информация про мягкие приманки</string>
+    <string name="artbait_7">Информация про вэки-черви</string>
+
+
+    <string name="bait_1">Информация про червей</string>
+    <string name="bait_2">Информация про личинки</string>
+    <string name="bait_3">Информация про натуральные наживки</string>
+    <string name="bait_4">Информация про насекомых</string>
+    <string name="bait_5">Информация про живые</string>
+    <string name="bait_6">Информация про живцов</string>
+    <string name="bait_7">Информация про орехи</string>
+    <string name="bait_8">Информация про тонущие бойлы</string>
+    <string name="bait_9">Информация про Pop-up бойлы</string>
+    <string name="bait_10">Информация про пеллетс</string>
+    <string name="bait_11">Информация про искусственную кукурузу</string>
+    <string name="bait_12">Информация про дипы</string>
+
+
+    <string name="rig_1">Информация про поплавки</string>
+    <string name="rig_2">Информация про сбирулино</string>
+    <string name="rig_3">Информация про грузила</string>
+    <string name="rig_4">Информация про поводки</string>
+    <string name="rig_5">Информация про кормушки</string>
+    <string name="rig_6">Информация про сигнализаторы поклёвки</string>
+    <string name="rig_7">Информация про джиггинг</string>
+
 
     <string name="home_second">Home Second</string>
 </resources>

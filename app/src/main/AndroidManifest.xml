@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".text_content_activity" >
+        <activity android:name=".ContentActivity" >
 
 
         </activity>

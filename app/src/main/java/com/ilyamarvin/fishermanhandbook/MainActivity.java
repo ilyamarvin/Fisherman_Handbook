@@ -9,17 +9,11 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.core.view.GravityCompat;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -33,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ListView list;
     private String[] array;
     private ArrayAdapter<String> adapter;
+    private int category_index;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +53,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(MainActivity.this, text_content_activity.class);
+                Intent intent = new Intent(MainActivity.this, ContentActivity.class);
+                intent.putExtra("category",category_index);
+                intent.putExtra("position",position);
                 startActivity(intent);
             }
         });
@@ -83,64 +80,36 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
+    private void setArray(int title, int arrayList, int index) {
+        toolbar.setTitle(title);
+        array = getResources().getStringArray(arrayList);
+        adapter.clear();
+        adapter.addAll(array);
+        adapter.notifyDataSetChanged();
+        category_index = index;
+    }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if(id == R.id.nav_starter) {
-            toolbar.setTitle(R.string.menu_starter);
-            array = getResources().getStringArray(R.array.starter_array);
-            adapter.clear();
-            adapter.addAll(array);
-            adapter.notifyDataSetChanged();
-        }
-        else if (id == R.id.nav_fish) {
-            toolbar.setTitle(R.string.menu_fish);
-            array = getResources().getStringArray(R.array.fish_array);
-            adapter.clear();
-            adapter.addAll(array);
-            adapter.notifyDataSetChanged();
-        }
-        else if (id == R.id.nav_hooks) {
-            toolbar.setTitle(R.string.menu_hooks);
-            array = getResources().getStringArray(R.array.hooks_array);
-            adapter.clear();
-            adapter.addAll(array);
-            adapter.notifyDataSetChanged();
-        }
-        else if (id == R.id.nav_artbait) {
-            toolbar.setTitle(R.string.menu_artbait);
-            array = getResources().getStringArray(R.array.artbait_array);
-            adapter.clear();
-            adapter.addAll(array);
-            adapter.notifyDataSetChanged();
-        }
-        else if (id == R.id.nav_rig) {
-            toolbar.setTitle(R.string.menu_rig);
-            array = getResources().getStringArray(R.array.rig_array);
-            adapter.clear();
-            adapter.addAll(array);
-            adapter.notifyDataSetChanged();
-        }
-        else if (id == R.id.nav_lure) {
-            toolbar.setTitle(R.string.menu_lure);
-            array = getResources().getStringArray(R.array.lure_array);
-            adapter.clear();
-            adapter.addAll(array);
-            adapter.notifyDataSetChanged();
-        }
-        else if (id == R.id.nav_tips) {
-            toolbar.setTitle(R.string.menu_tips);
-            array = getResources().getStringArray(R.array.tips_array);
-            adapter.clear();
-            adapter.addAll(array);
-            adapter.notifyDataSetChanged();
-        }
-        else if (id == R.id.nav_weather) {
-            toolbar.setTitle(R.string.menu_weather);
-            array = getResources().getStringArray(R.array.weather_array);
-            adapter.clear();
-            adapter.addAll(array);
-            adapter.notifyDataSetChanged();
+        if (id == R.id.nav_starter) {
+            setArray(R.string.menu_starter, R.array.starter_array, 0);
+        } else if (id == R.id.nav_fish) {
+            setArray(R.string.menu_fish, R.array.fish_array, 1);
+        } else if (id == R.id.nav_hooks) {
+            setArray(R.string.menu_hooks, R.array.hooks_array, 2);
+        } else if (id == R.id.nav_artbait) {
+            setArray(R.string.menu_artbait, R.array.artbait_array, 3);
+        } else if (id == R.id.nav_bait) {
+            setArray(R.string.menu_bait, R.array.bait_array, 4);
+        } else if (id == R.id.nav_rig) {
+            setArray(R.string.menu_rig, R.array.rig_array, 5);
+        } else if (id == R.id.nav_lure) {
+            setArray(R.string.menu_lure, R.array.lure_array, 6);
+        } else if (id == R.id.nav_tips) {
+            setArray(R.string.menu_tips, R.array.tips_array, 7);
+        } else if (id == R.id.nav_weather) {
+            setArray(R.string.menu_weather, R.array.weather_array, 8);
         }
 
         drawer.closeDrawer(GravityCompat.START);
