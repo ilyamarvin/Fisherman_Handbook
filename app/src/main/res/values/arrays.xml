@@ -79,5 +79,11 @@
 
     </string-array>
 
+    <string-array name="settings_text">
+        <item>Маленький</item>
+        <item>Средний</item>
+        <item>Большой</item>
+    </string-array>
+
 
 </resources>

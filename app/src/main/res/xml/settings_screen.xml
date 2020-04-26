@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/text_settings">
+
+    </PreferenceCategory>
+    <ListPreference
+        android:defaultValue="@string/middle_text"
+        android:entries="@array/settings_text"
+        android:entryValues="@array/settings_text"
+        android:key="settings_text"
+        android:title="@string/text_size" />
+</PreferenceScreen>

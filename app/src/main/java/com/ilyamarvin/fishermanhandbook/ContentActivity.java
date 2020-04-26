@@ -1,15 +1,21 @@
 package com.ilyamarvin.fishermanhandbook;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ContentActivity extends AppCompatActivity {
+    private ActionBar actionBar;
     private TextView text_content;
+    private SharedPreferences default_pref;
     private int category = 0;
     private int position = 0;
     private ImageView imContent;
@@ -20,6 +26,9 @@ public class ContentActivity extends AppCompatActivity {
             R.string.fish_12, R.string.fish_13, R.string.fish_14, R.string.fish_15, R.string.fish_16, R.string.fish_17
     };
     private int[] array_image_fish = {R.drawable.ukleyka};
+    private int[] array_title_fish = {R.string.fish_name_1, R.string.fish_name_2, R.string.fish_name_3, R.string.fish_name_4, R.string.fish_name_5,
+            R.string.fish_name_6, R.string.fish_name_7, R.string.fish_name_8, R.string.fish_name_9, R.string.fish_name_10, R.string.fish_name_11,
+            R.string.fish_name_12, R.string.fish_name_13, R.string.fish_name_14, R.string.fish_name_15, R.string.fish_name_16, R.string.fish_name_17};
     private int[] array_hooks = {
             R.string.hook_1, R.string.hook_2, R.string.hook_3, R.string.hook_4,
             R.string.hook_5, R.string.hook_6, R.string.hook_7
@@ -42,10 +51,32 @@ public class ContentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        default_pref = PreferenceManager.getDefaultSharedPreferences(this);
+
+        if(getSupportActionBar() != null) {
+            actionBar = getSupportActionBar();
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
         setContentView(R.layout.text_content);
+        actionBar = getSupportActionBar();
         text_content = findViewById(R.id.text_fish_content);
         imContent = findViewById(R.id.imageContent);
         receiveIntent();
+
+        String text = default_pref.getString("settings_text","Средний");
+        switch (text) {
+            case "Маленький" :
+                text_content.setTextSize(12);
+                break;
+            case "Средний" :
+                text_content.setTextSize(18);
+                break;
+            case "Большой" :
+                text_content.setTextSize(24);
+                break;
+        }
     }
 
     private void receiveIntent() {
@@ -61,6 +92,7 @@ public class ContentActivity extends AppCompatActivity {
             case 1:
              //   imContent.setImageResource(array_image_fish[position]);
                 text_content.setText(array_fish[position]);
+                actionBar.setTitle(array_title_fish[position]);
                 break;
             case 2:
                 text_content.setText(array_hooks[position]);

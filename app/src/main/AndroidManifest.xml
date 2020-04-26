@@ -20,11 +20,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ContentActivity" >
-
-
+        <activity
+            android:name=".ContentActivity"
+            android:parentActivityName=".ContentActivity">
         </activity>
 
+        <activity android:name=".settings.SettingsActivity">
+
+        </activity>
     </application>
 
 </manifest>
