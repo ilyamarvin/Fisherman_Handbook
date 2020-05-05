@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -19,11 +18,13 @@ public class ContentActivity extends AppCompatActivity {
     private int category = 0;
     private int position = 0;
     private ImageView imContent;
-    private int[] array_starter = {R.string.starter};
+    private int[] array_new = {R.string.new_1};
+    private int[] array_starter = {R.string.starter_1, R.string.starter_2, R.string.starter_3, R.string.starter_4, R.string.starter_5,
+            R.string.starter_6, R.string.starter_7};
     private int[] array_fish = {
             R.string.fish_1, R.string.fish_2, R.string.fish_3, R.string.fish_4, R.string.fish_5,
             R.string.fish_6, R.string.fish_7, R.string.fish_8, R.string.fish_9, R.string.fish_10, R.string.fish_11,
-            R.string.fish_12, R.string.fish_13, R.string.fish_14, R.string.fish_15, R.string.fish_16, R.string.fish_17
+            R.string.fish_12, R.string.fish_13, R.string.fish_14, R.string.fish_15, R.string.fish_16
     };
     private int[] array_image_fish = {R.drawable.ukleyka};
     private int[] array_title_fish = {R.string.fish_name_1, R.string.fish_name_2, R.string.fish_name_3, R.string.fish_name_4, R.string.fish_name_5,

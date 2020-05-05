@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
 
         list = findViewById(R.id.listView);
-        array = getResources().getStringArray(R.array.starter_array);
+        array = getResources().getStringArray(R.array.new_array);
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new ArrayList<String>(Arrays.asList(array)));
         list.setAdapter(adapter);
 
@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
         ActionBarDrawerToggle toogle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toogle);
         toogle.syncState();
@@ -75,9 +74,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-        toolbar.setTitle(R.string.menu_starter);
+        toolbar.setTitle(R.string.menu_new);
         return true;
     }
 
@@ -122,8 +120,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_weather) {
             setArray(R.string.menu_weather, R.array.weather_array, 8);
         }
-
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

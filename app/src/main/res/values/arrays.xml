@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="starter_array">здесь будет мини-гайд</string-array>
+
+    <string-array name="new_array">
+        <item>Это приложение, которое поможет рыбакам и не только!</item>
+    </string-array>
+
+    <string-array name="starter_array">
+        <item>Как правильно собирать удочку?</item>
+        <item>Как подобрать наживку?</item>
+        <item>Как нужно насаживать наживку?</item>
+        <item>Как ?</item>
+        <item>Как ?</item>
+        <item>Как ?</item>
+        <item>Как ?</item>
+    </string-array>
 
     <string-array name="fish_array">
         <item>Уклейка</item>
@@ -17,7 +30,6 @@
         <item>Голавль</item>
         <item>Жерех</item>
         <item>Язь</item>
-        <item>Сазан</item>
         <item>Густера</item>
         <item>Амур</item>
     </string-array>
