@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string-array name="new_array">
-        <item>Это приложение, которое поможет рыбакам и не только!</item>
-    </string-array>
-
     <string-array name="starter_array">
         <item>Как правильно собирать удочку?</item>
         <item>Как подобрать наживку?</item>

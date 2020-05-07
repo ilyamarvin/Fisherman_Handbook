@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
 
         list = findViewById(R.id.listView);
-        array = getResources().getStringArray(R.array.new_array);
+        array = getResources().getStringArray(R.array.starter_array);
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new ArrayList<String>(Arrays.asList(array)));
         list.setAdapter(adapter);
 
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
-        toolbar.setTitle(R.string.menu_new);
+        toolbar.setTitle(R.string.menu_starter);
         return true;
     }
 

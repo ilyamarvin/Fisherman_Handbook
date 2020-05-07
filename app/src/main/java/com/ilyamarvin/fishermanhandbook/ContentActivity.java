@@ -18,7 +18,6 @@ public class ContentActivity extends AppCompatActivity {
     private int category = 0;
     private int position = 0;
     private ImageView imContent;
-    private int[] array_new = {R.string.new_1};
     private int[] array_starter = {R.string.starter_1, R.string.starter_2, R.string.starter_3, R.string.starter_4, R.string.starter_5,
             R.string.starter_6, R.string.starter_7};
     private int[] array_fish = {
